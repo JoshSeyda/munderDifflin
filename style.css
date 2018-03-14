@@ -32,7 +32,7 @@ HEX: #618685
 #3b3a36
 
 /*  set up page  */
-   
+
 body {          
     align-items: center;        
     display: flex; 
@@ -87,14 +87,10 @@ nav{
 	line-height: 1em;
 	text-align: center;
 	text-shadow: 1px 1px 0 #444;
+	opacity: 0.5;
+	text-shadow: none;
 }
-/*#nav a {
-  color: #fff;
-  font-size: 2em;
-  text-decoration: none;
-  opacity: 0.5;
-  text-shadow: none;
-}*/
+
 #nav a:hover { opacity: 1; }
 
 #nav li{
@@ -113,6 +109,8 @@ nav{
   margin:3% 37%;
   text-decoration: none;
   transition: all 0.3s;
+  opacity: 0.5;
+  text-shadow: none;
 }
 
  #nav li a:hover {
@@ -166,7 +164,7 @@ nav{
 /* 2nd set of half page sections  */
 /* temporary theft */
 .collapsible {
-    background-color: #FFF;
+    background-color: rgba(0, 0, 0, 0);
     color: black;
     cursor: pointer;
     padding: 0;
@@ -177,14 +175,14 @@ nav{
 }
 
 .active, .collapsible:hover {
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0);
 }
 .support{
 	display:flex;
@@ -192,13 +190,14 @@ nav{
 	width:90%;
 	padding-left: 10%;
 	padding-right: 10%;
-	cursor: pointer;
+	
 	border: none;
     outline: none;
     transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0);
 }
 .active, .support:hover {
-    background-color: #ccc;
+    background-color: rgba(0, 0, 0, 0);
 }
 .panel {
     padding: 0 18px;
@@ -208,14 +207,16 @@ nav{
     max-height: 0;
     transition: max-height 0.2s ease-out;
 }
-/*  triptych */
+
+/*  triptych at bottom */
 #connect{
 	display:flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	width: 90%;
 	height:100%;
-	margin-top:5%;
+	
+	margin: 5% 10%;
 }
 #reach1{
 	color:#80ced6;
