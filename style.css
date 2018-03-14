@@ -1,0 +1,276 @@
+.#d5f4e6
+ #80ced6
+ #fefbd8
+ #618685
+
+#c0dfd9
+#e9ece5
+#b3c2bf
+#3b3a36
+
+/*  set up page  */
+body {          
+    align-items: center;        
+    display: flex; 
+    flex-direction: column; 
+}
+nav{
+	width:100%;
+	height:2%;
+	text-align: center;
+}
+
+/* navigation  */
+#headBar {
+	display:block;
+	flex-direction: row;
+	list-style-type: none;
+	width:100%;
+	text-align: center;
+	background: #c0dfd9;
+	padding: 10px 0 10px 0;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size:1.25em;
+	line-height: 1em;
+	height: 60px;
+	overflow: hidden;
+	-webkit-transition: height 0.5s linear;
+	-moz-transition: height 0.5s linear;
+	transition: height 0.5s linear;
+}
+#headBar a {
+	color: #3b3a36;
+	font-size:2em;
+	line-height: 1em;
+	text-decoration: none;
+	opacity: 0.5;
+	font-weight: bold;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+#headBar a:hover {
+	opacity: 1;
+}
+ 
+#nav {
+	display:block;
+	flex-direction: row;
+	list-style-type: none;
+	height:200px;
+	background-color: #c0dfd9;
+	font-weight: bold;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin:0 auto;
+	padding: 8px 5px; 
+	font-size: 1em;
+	line-height: 1em;
+	text-align: center;
+	text-shadow: 1px 1px 0 #444;
+	opacity: 0.5;
+	text-shadow: none;
+}
+
+#nav a:hover { opacity: 1; }
+
+#nav li{
+	margin-top:0;
+	margin-bottom:0;
+	height:5%;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#nav li a {
+  display: block;
+  color: #3b3a36;
+  font-size: 2rem;
+  line-height: 1em;
+  width:25%;
+  border: 2px solid transparent;
+  margin:3% 37%;
+  text-decoration: none;
+  transition: all 0.3s;
+  opacity: 0.5;
+  text-shadow: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+ #nav li a:hover {
+  border: 2px solid #fefbd8;
+}
+
+ 
+#headBar:hover { height: 100%; }
+
+
+
+/*  photo banner */
+#landing{
+	margin:5% auto; 
+	width: 90%;
+	padding:3%;
+	background-image: url(pics/meeting.jpeg)
+
+}
+#landing img{
+	display:block;
+	margin: 0 5% 0 0;
+	width:100%;
+	height:auto;
+}
+
+/*  smaller sections of content */
+.supplement{
+	display:flex;
+	flex-direction: column;
+	width:50%;
+	height: 50%;
+	margin:0 auto;
+	padding:1%;
+	position:relative;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+.supplement img {
+	height: auto; 
+    width: auto; 
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+
+/* 1st set of half page sections  */
+#content{
+	display:flex;
+	flex-direction: row;
+	width:90%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+/* 2nd set of half page sections  */
+.collapsible {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.active, .collapsible:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.support{
+	display:flex;
+	flex-direction: row;
+	width:90%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0);
+}
+.active, .support:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+/*  triptych at bottom */
+#connect{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 90%;
+	height:100%;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin: 5% 10%;
+}
+#reach1{
+	color:#80ced6;
+	display:flex;
+	flex-direction: column;
+	height: 80%;
+	width:33%;
+	background-image: url(pics/gpsmall.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#reach2{
+	color:#80ced6;
+	display:flex;
+	flex-direction: column;
+	height: 80%;
+	width:33%;
+	background-image: url(pics/cloudsmall.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#reach3{
+	color:#80ced6;
+	display:flex;
+	flex-direction: column;
+	height: 80%;
+	width:33%;
+	background-image: url(pics/global.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#reach1 p{
+
+	font-size: larger;
+    display: flex;
+    height: 300px;
+    align-self: center;
+    flex-direction: column;
+}
+#reach2 p{
+	font-size: larger;
+    display: flex;
+    height: 300px;
+    align-self: center;
+    flex-direction: column;
+}
+#reach3 p{
+	font-size: larger;
+    display: flex;
+    height: 300px;
+    align-self: center;
+    flex-direction: column;
+}
+/* footer...  */
+#foot{
+
+}
+
+/* Mobile Responsive Phone */
+
+@media all and (max-width: 767px){
+#headBar {}
+#headBar a {}
+#nav{}
+#nav li{}
+#nav li a{}
+.supplement{}
+#content{}
+.collapsible {}
+.content {}
+
+}
