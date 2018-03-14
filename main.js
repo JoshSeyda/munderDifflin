@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function(){
-	let hidden0 = document.getElementById("z");
-	let hidden1 = document.getElementById("a");
-	let hidden2 = document.getElementById("b"); 
+	let hidden0 = document.getElementById("landing");
+	let hidden1 = document.getElementById("content");
+	let hidden2 = document.getElementById("support"); 
 	let hidden3 = document.getElementById("c");
 		 if (window.scrollY > 1054 && window.scrollY < 1857) {
    	 		hidden1.classList = "show";
@@ -24,4 +24,11 @@ window.addEventListener('scroll', function(){
 			hidden2.classList = "hidden";
    	 		hidden3.classList = "hidden";
 		}
+});
+
+$(document).ready(function(){
+  $('.toggle').click(function(){
+    $('#nav').toggleClass('open');
+    $('.container').toggleClass('menu-open');
+  });
 });
