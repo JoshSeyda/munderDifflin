@@ -1,22 +1,40 @@
+/*  set up page  */
+html, body {    
+    height: 100%;    
+    margin: 0;  
+}    
+body {          
+    align-items: center;        
+    display: flex;  
+}
+ul{
+	list-style-type: none;
+	
+}
 /*  smaller sections of content */
 .supplement{
-
+	display:flex;
+	flex-direction: row;
 }
+
 /* navigation  */
 #headBar{
 
 }
 /*  photo banner */
 #landing{
+	margin:0 auto;
 
 }
 /* 1st set of half page sections  */
 #content{
-
+	display:flex;
+	flex-direction: column;
 }
 /* 2nd set of half page sections  */
 #support{
-
+	display:flex;
+	flex-direction: column;
 }
 /* footer...  */
 #foot{
