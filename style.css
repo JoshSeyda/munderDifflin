@@ -1,38 +1,14 @@
-.w3-theme-l5 {color:#000 ; background-color:#f8fcfe }
-.w3-theme-l4 {color:#000 ; background-color:#e7f5fb }
-.w3-theme-l3 {color:#000 ; background-color:#d0ecf7 }
-.w3-theme-l2 {color:#000 ; background-color:#b8e2f3 }
-.w3-theme-l1 {color:#000 ; background-color:#a1d9ef }
-.w3-theme-d1 {color:#000 ; background-color:#69c2e6 }
-.w3-theme-d2 {color:#fff ; background-color:#4ab6e0 }
-.w3-theme-d3 {color:#fff ; background-color:#2aa9db }
-.w3-theme-d4 {color:#fff ; background-color:#2092bf }
-.w3-theme-d5 {color:#fff ; background-color:#1b7a9f }
+.#d5f4e6
+ #80ced6
+ #fefbd8
+ #618685
 
-.w3-theme-light {color:#000 ; background-color:#f8fcfe }
-.w3-theme-dark {color:#fff ; background-color:#1b7a9f }
-.w3-theme-action {color:#fff ; background-color:#1b7a9f }
-
-.w3-theme {color:#000 ; background-color:#87ceeb }
-.w3-text-theme {color:#87ceeb }
-.w3-border-theme {border-color:#87ceeb }
-
-.w3-hover-theme:hover {color:#000 ; background-color:#87ceeb }
-.w3-hover-text-theme:hover {color:#87ceeb }
-.w3-hover-border-theme:hover {border-color:#87ceeb }
-
-.altheme: HEX: #d5f4e6
-HEX: #80ced6
-HEX: #fefbd8
-HEX: #618685
-
-.otheme:#c0dfd9
+#c0dfd9
 #e9ece5
 #b3c2bf
 #3b3a36
 
 /*  set up page  */
-
 body {          
     align-items: center;        
     display: flex; 
@@ -43,6 +19,7 @@ nav{
 	height:2%;
 	text-align: center;
 }
+
 /* navigation  */
 #headBar {
 	display:block;
@@ -52,7 +29,7 @@ nav{
 	text-align: center;
 	background: #c0dfd9;
 	padding: 10px 0 10px 0;
-	text-align: center;
+	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size:1.25em;
 	line-height: 1em;
 	height: 60px;
@@ -62,12 +39,13 @@ nav{
 	transition: height 0.5s linear;
 }
 #headBar a {
-	color: #fefbd8;
+	color: #3b3a36;
 	font-size:2em;
 	line-height: 1em;
 	text-decoration: none;
 	opacity: 0.5;
 	font-weight: bold;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 #headBar a:hover {
 	opacity: 1;
@@ -77,10 +55,10 @@ nav{
 	display:block;
 	flex-direction: row;
 	list-style-type: none;
-	color: #fefbd8;
 	height:200px;
 	background-color: #c0dfd9;
 	font-weight: bold;
+	font-family: 'Ubuntu Condensed', sans-serif;
 	margin:0 auto;
 	padding: 8px 5px; 
 	font-size: 1em;
@@ -97,11 +75,12 @@ nav{
 	margin-top:0;
 	margin-bottom:0;
 	height:5%;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 #nav li a {
   display: block;
-  color: #fefbd8;
+  color: #3b3a36;
   font-size: 2rem;
   line-height: 1em;
   width:25%;
@@ -111,6 +90,7 @@ nav{
   transition: all 0.3s;
   opacity: 0.5;
   text-shadow: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
  #nav li a:hover {
@@ -131,8 +111,10 @@ nav{
 
 }
 #landing img{
-	margin-left: 4%;
-	margin-right: 5%;
+	display:block;
+	margin: 0 5% 0 0;
+	width:100%;
+	height:auto;
 }
 
 /*  smaller sections of content */
@@ -144,6 +126,7 @@ nav{
 	margin:0 auto;
 	padding:1%;
 	position:relative;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 .supplement img {
 	height: auto; 
@@ -162,7 +145,6 @@ nav{
 	padding-right: 10%;
 }
 /* 2nd set of half page sections  */
-/* temporary theft */
 .collapsible {
     background-color: rgba(0, 0, 0, 0);
     color: black;
@@ -172,6 +154,7 @@ nav{
     border: none;
     text-align: left;
     outline: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .active, .collapsible:hover {
@@ -183,6 +166,7 @@ nav{
     display: none;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0);
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 .support{
 	display:flex;
@@ -190,7 +174,7 @@ nav{
 	width:90%;
 	padding-left: 10%;
 	padding-right: 10%;
-	
+	font-family: 'Ubuntu Condensed', sans-serif;
 	border: none;
     outline: none;
     transition: 0.4s;
@@ -206,6 +190,7 @@ nav{
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 /*  triptych at bottom */
@@ -215,7 +200,7 @@ nav{
 	justify-content: center;
 	width: 90%;
 	height:100%;
-	
+	font-family: 'Ubuntu Condensed', sans-serif;
 	margin: 5% 10%;
 }
 #reach1{
@@ -227,8 +212,6 @@ nav{
 	background-image: url(pics/gpsmall.jpeg);
 	background-size: cover;
 	background-position: center;
-	
-
 }
 #reach2{
 	color:#80ced6;
@@ -277,6 +260,17 @@ nav{
 
 }
 
+/* Mobile Responsive Phone */
 
+@media all and (max-width: 767px){
+#headBar {}
+#headBar a {}
+#nav{}
+#nav li{}
+#nav li a{}
+.supplement{}
+#content{}
+.collapsible {}
+.content {}
 
-
+}
