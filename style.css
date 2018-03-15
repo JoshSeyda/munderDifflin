@@ -13,6 +13,8 @@ body {
     align-items: center;        
     display: flex; 
     flex-direction: column; 
+ 
+    overflow: auto;
 }
 nav{
 	width:100%;
@@ -34,9 +36,6 @@ nav{
 	line-height: 1em;
 	height: 60px;
 	overflow: hidden;
-	-webkit-transition: height 0.5s linear;
-	-moz-transition: height 0.5s linear;
-	transition: height 0.5s linear;
 }
 #headBar a {
 	color: #3b3a36;
@@ -87,20 +86,12 @@ nav{
   border: 2px solid transparent;
   margin:3% 37%;
   text-decoration: none;
-  transition: all 0.3s;
   opacity: 0.5;
   text-shadow: none;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
-
- #nav li a:hover {
-  border: 2px solid #fefbd8;
-}
-
  
 #headBar:hover { height: 100%; }
-
-
 
 /*  photo banner */
 #landing{
@@ -115,6 +106,8 @@ nav{
 	margin: 0 5% 0 0;
 	width:100%;
 	height:auto;
+	animation: drop-in 3s 1s normal;
+	
 }
 
 /*  smaller sections of content */
@@ -141,8 +134,7 @@ nav{
 	display:flex;
 	flex-direction: row;
 	width:90%;
-	padding-left: 10%;
-	padding-right: 10%;
+	
 }
 /* 2nd set of half page sections  */
 .collapsible {
@@ -154,35 +146,27 @@ nav{
     border: none;
     text-align: left;
     outline: none;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    
 }
 
 .active, .collapsible:hover {
-    background-color: rgba(0, 0, 0, 0);
+    opacity:0.5;
 }
 
 .content {
-    padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0);
-    font-family: 'Ubuntu Condensed', sans-serif;
+   
 }
 .support{
 	display:flex;
 	flex-direction: row;
-	width:90%;
-	padding-left: 10%;
-	padding-right: 10%;
-	font-family: 'Ubuntu Condensed', sans-serif;
 	border: none;
     outline: none;
     transition: 0.4s;
-    background-color: rgba(0, 0, 0, 0);
 }
-.active, .support:hover {
-    background-color: rgba(0, 0, 0, 0);
-}
+
 .panel {
     padding: 0 18px;
     background-color: white;
@@ -197,43 +181,32 @@ nav{
 #connect{
 	display:flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	width: 90%;
 	height:100%;
 	font-family: 'Ubuntu Condensed', sans-serif;
-	margin: 5% 10%;
+	margin: 5% auto;
+}
+#reach1 , #reach2 , #reach3{
+	color:#80ced6;
+	display:flex;
+	flex-direction: column;
+	height: 80%;
+	width:33%;
+	background-size: cover;
+	background-position: center;
 }
 #reach1{
-	color:#80ced6;
-	display:flex;
-	flex-direction: column;
-	height: 80%;
-	width:33%;
 	background-image: url(pics/gpsmall.jpeg);
-	background-size: cover;
-	background-position: center;
 }
 #reach2{
-	color:#80ced6;
-	display:flex;
-	flex-direction: column;
-	height: 80%;
-	width:33%;
-	background-image: url(pics/cloudsmall.jpeg);
-	background-size: cover;
-	background-position: center;
+	color:#4c6c70;
+	background-image: url(pics/global.jpeg);
 }
 #reach3{
-	color:#80ced6;
-	display:flex;
-	flex-direction: column;
-	height: 80%;
-	width:33%;
-	background-image: url(pics/global.jpeg);
-	background-size: cover;
-	background-position: center;
+	background-image: url(pics/cloudsmall.jpeg);
 }
-#reach1 p{
+#reach1 p , #reach2 p , #reach3 p{
 
 	font-size: larger;
     display: flex;
@@ -241,36 +214,44 @@ nav{
     align-self: center;
     flex-direction: column;
 }
-#reach2 p{
-	font-size: larger;
-    display: flex;
-    height: 300px;
-    align-self: center;
-    flex-direction: column;
-}
-#reach3 p{
-	font-size: larger;
-    display: flex;
-    height: 300px;
-    align-self: center;
-    flex-direction: column;
-}
+
 /* footer...  */
 #foot{
-
+	color: #3b3a36;
+	text-align: center;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
-
+@keyframes drop-in{
+  from {
+    margin-top: -100%;  
+  }
+  to {
+    margin-top: 0;
+  }
 /* Mobile Responsive Phone */
 
 @media all and (max-width: 767px){
-#headBar {}
-#headBar a {}
-#nav{}
-#nav li{}
-#nav li a{}
-.supplement{}
-#content{}
-.collapsible {}
-.content {}
 
+#nav li a{
+	margin:10% 37%;
 }
+.supplement{
+	width:100%;
+	margin-right:5%;		
+}
+.support{
+	padding:5%;
+	flex-direction: column;
+}
+#connect{
+	flex-direction: column;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+#reach1 , #reach2 , #reach3{
+	width:100%;
+	padding:0;
+}
+}
+
