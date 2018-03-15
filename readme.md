@@ -12,7 +12,7 @@
 ###### The website has an expandable menu, animated banner drop on page load, and clickable photos that drop down text snippets.
 ## Code Example
 ###### Below is the JavaScript I used to make the photo drop downs activate on click. 
-###### ```javascript
+```javascript
 let collapse = document.getElementsByClassName("collapsible");
 let i;
 for (i = 0; i < collapse.length; i++) {
@@ -29,8 +29,7 @@ for (i = 0; i < collapse.length; i++) {
 ## How To Use
 ###### Click around, scroll, and please give me constructive feedback or critique. 
 ## Credit
-###### This project would not be possible without the CSS, HTML, and JavaScript tutorials available at [w3C Schools](https://www.w3schools.com/). Also, [CSS Tricks](https://css-tricks.com) was pivotal in my design and styling implementation.The typeface, which I very much enjoy was found at [Google Fonts](https://fonts.google.com/). All images are liscenced by Creative Commons from 
-[Pexels](https://www.pexels.com/).
+###### This project would not be possible without the CSS, HTML, and JavaScript tutorials available at [w3C Schools](https://www.w3schools.com/). Also, [CSS Tricks](https://css-tricks.com) was pivotal in my design and styling implementation.The typeface, which I very much enjoy was found at [Google Fonts](https://fonts.google.com/). All images are liscenced by Creative Commons from [Pexels](https://www.pexels.com/).
 ## Licence
 ##### IT License
 
