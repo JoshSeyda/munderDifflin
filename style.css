@@ -1,8 +1,9 @@
-.#d5f4e6
- #80ced6
- #fefbd8
- #618685
+/* color palette */
 
+#d5f4e6
+#80ced6
+#fefbd8
+#618685
 #c0dfd9
 #e9ece5
 #b3c2bf
@@ -237,7 +238,8 @@ nav{
 }
 .supplement{
 	width:100%;
-	margin-right:5%;		
+	margin-right:5%;	
+	flex-direction: column;	
 }
 .support{
 	padding:5%;
