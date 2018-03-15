@@ -30,7 +30,7 @@ for (i = 0; i < collapse.length; i++) {
 ## How To Use
 ###### Click around, scroll, and please give me constructive feedback or critique. 
 ## Credit
-###### This project would not be possible without the CSS, HTML, and JavaScript tutorials available at [w3C Schools](https://www.w3schools.com/). Also, [CSS Tricks](https://css-tricks.com) was pivotal in my design and styling implementation.The typeface, which I very much enjoy was found at [Google Fonts](https://fonts.google.com/). All images are liscenced by Creative Commons from [Pexels](https://www.pexels.com/).
+###### This project would not be possible without the CSS, HTML, and JavaScript tutorials available at [w3C Schools](https://www.w3schools.com/). Also, [CSS Tricks](https://css-tricks.com) was pivotal in my design and styling implementation.The typeface, which I very much enjoy was found at [Google Fonts](https://fonts.google.com/). All images are liscenced by Creative Commons from [Pexels](https://www.pexels.com/). The Above photo, used in the ReadMe and the page itself is from [Munder Difflin Unofficial](http://munderdifflin.madebysuperfly.com/).
 ## Licence
 ##### IT License
 
