@@ -25,7 +25,8 @@ for (i = 0; i < collapse.length; i++) {
             content.style.display = "block";
         }
     });
-}```
+}
+```
 ## How To Use
 ###### Click around, scroll, and please give me constructive feedback or critique. 
 ## Credit
@@ -33,7 +34,7 @@ for (i = 0; i < collapse.length; i++) {
 ## Licence
 ##### IT License
 
-###### Copyright (c) [year] [fullname]
+###### Copyright &copy; [2018] [Joshua Seyda]
 
 ###### Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
