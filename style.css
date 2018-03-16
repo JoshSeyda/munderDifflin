@@ -76,7 +76,7 @@ nav{
 	margin-bottom:0;
 	height:5%;
 	font-family: 'Ubuntu Condensed', sans-serif;
-}
+}_
 
 #nav li a {
   display: block;
@@ -233,6 +233,9 @@ nav{
 
 @media all and (max-width: 767px){
 
+#headBar{
+	height:30px;
+}
 #nav li a{
 	margin:10% 37%;
 }
@@ -255,5 +258,6 @@ nav{
 	width:100%;
 	padding:0;
 }
-}
+
+}}
 
