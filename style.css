@@ -1,8 +1,9 @@
-.#d5f4e6
- #80ced6
- #fefbd8
- #618685
+/* color palette */
 
+#d5f4e6
+#80ced6
+#fefbd8
+#618685
 #c0dfd9
 #e9ece5
 #b3c2bf
@@ -75,7 +76,7 @@ nav{
 	margin-bottom:0;
 	height:5%;
 	font-family: 'Ubuntu Condensed', sans-serif;
-}
+}_
 
 #nav li a {
   display: block;
@@ -232,12 +233,16 @@ nav{
 
 @media all and (max-width: 767px){
 
+#headBar{
+	height:30px;
+}
 #nav li a{
 	margin:10% 37%;
 }
 .supplement{
 	width:100%;
-	margin-right:5%;		
+	margin-right:5%;	
+	flex-direction: column;	
 }
 .support{
 	padding:5%;
@@ -253,5 +258,6 @@ nav{
 	width:100%;
 	padding:0;
 }
-}
+
+}}
 
